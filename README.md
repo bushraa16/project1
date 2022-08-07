@@ -1,4 +1,4 @@
-# Download Ros
+ # part1 Download Ros in ubuntu
 ## step1
 ***1- Download Oracle VM VirtualBox***
 ## step2
@@ -49,4 +49,21 @@ sudo nano ~/.bashrc
 at the end of the (bashrc) file add the follwing line source /home/HERE I BUT MY OWN NAME/catkin_ws/devel/setup.bash then ctrl + o
 source ~/.bashrc
 roslaunch robot_arm_pkg check_motors.launch
+```
+# Part 2 Install ROS on Jetson Nano
+## open terminal
+***You can clone the repository on to the Jetson***
+```
+$ git clone https://github.com/JetsonHacksNano/installROS.git
+$ cd installROS
+$ls
+$./installROS.sh -h
+$./installROS.sh -p ros-melodic-desktop -p ros-melodic-rgbd-launch
+```
+## setupCatkinWorkspace.sh
+```
+$ ./setupCatkinWorkspace.sh
+$gedit ~/.bashrc
+$source ~/.bashrc
+$roscore
 ```
